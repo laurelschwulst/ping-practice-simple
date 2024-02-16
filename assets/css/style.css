@@ -1,0 +1,83 @@
+/* fonts */
+
+@font-face {
+    font-family: 'garamondno8bold-italic';
+    src: url('../fonts/garamondno8-bold-italic-webfont.woff2') format('woff2'),
+         url('../fonts/garamondno8-bold-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'garamondno8bold';
+    src: url('../fonts/garamondno8-bold-webfont.woff2') format('woff2'),
+         url('../fonts/garamondno8-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'garamondno8italic';
+    src: url('../fonts/garamondno8-italic-webfont.woff2') format('woff2'),
+         url('../fonts/garamondno8-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'garamondno8regular';
+    src: url('../fonts/garamondno8-regular-webfont.woff2') format('woff2'),
+         url('../fonts/garamondno8-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* global */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 18px;
+  font-family: 'garamondno8regular', serif;
+  font-size: 18px;
+  line-height: 1.35;
+  overflow-x: hidden;
+}
+
+main {
+    max-width: 27.5em;
+    margin: 5em auto;
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    margin-top: 0.25em;
+}
+
+img {
+    max-width: 100%;
+}
+
+i, em {
+    font-style: normal;
+    font-family: 'garamondno8italic';
+}
+
+.gray {
+    opacity: 0.6;
+    margin-top: 1em;
+}
+
+a.enter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: block;
+}
