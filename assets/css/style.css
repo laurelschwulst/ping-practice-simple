@@ -49,6 +49,7 @@ body {
 main {
     max-width: 27.5em;
     margin: 5em auto;
+    padding: 18px;
 }
 
 figure {
@@ -63,14 +64,44 @@ img {
     max-width: 100%;
 }
 
-i, em {
+i, em,
+section {
     font-style: normal;
     font-family: 'garamondno8italic';
+}
+
+b, strong {
+    font-weight: normal;
+    font-family: 'garamondno8bold';
+}
+
+.large-text {
+    font-size: 1.75em;
+    font-style: normal;
+    font-family: 'garamondno8italic';
+    margin-top: 0.15em;
+    line-height: 1.25;
 }
 
 .gray {
     opacity: 0.6;
     margin-top: 1em;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 18px;
+    left: 18px;
+}
+
+.gradient-overlay {
+    position: fixed;
+    left: 0;
+    bottom: calc(1em + 36px);
+    width: 100%;
+    height: 10%; /* Adjust the height as needed */
+    background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    pointer-events: none; /* Ensures the overlay doesn't interfere with mouse events */
 }
 
 a.enter {
@@ -80,4 +111,135 @@ a.enter {
     bottom: 0;
     right: 0;
     display: block;
+}
+
+nav#primary a,
+nav#lateral a {
+    color: black;
+    font-style: normal;
+    font-family: 'garamondno8italic';
+    display: inline-block;
+    margin-right: 0.5em;
+    text-decoration: none;
+}
+
+nav#primary a.current {
+    text-decoration: underline;
+}
+
+nav#primary {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    z-index: 3;
+}
+
+nav#lateral {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 18px;
+    background: white;
+}
+
+nav#lateral a.next {
+    float: right;
+}
+
+nav#lateral a.prev {
+    float: left;
+}
+
+.clearer {
+    clear: both;
+}
+
+nav#lateral a {
+    opacity: 0.6;
+}
+
+a {
+    color: black;
+    text-shadow:0 0 2px white;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.slide {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    padding: 18px;
+    padding-top: 5.5em;
+    background: white;
+}
+
+.slide:first-child,
+.slide:target {
+    display: block;
+}
+
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+section {
+    display: block;
+}
+
+h1.hidden {
+    display: none;
+}
+
+h2 {
+    font-size: 1em;
+    font-weight: normal;
+    font-family: 'garamondno8bold';
+}
+
+h2:first-of-type {
+    margin-top: 0.25em;
+}
+
+sup {
+    font-size: 0.65em;
+}
+
+footer {
+    font-size: 0.75em;
+}
+
+hr {
+    border: 0;
+    margin: 2em 0;
+    border-bottom: 1px solid rgba(0,0,0, 0.25);
+}
+
+footer ol {
+    margin: 0;
+    padding: 0;
+    margin-left: 1em;
+}
+
+footer ol li {
+    padding-left: 0.5em;
+}
+
+footer ol li a {
+    color: black;
+    text-decoration: none;
 }
